@@ -42,10 +42,15 @@
       <div class="row">
         
         <div class="col-lg-3 col-12 logo-container">
-          <div class="container-logo">
+          <div id="logoBox" class="container-logo">
             <img src="assets/img/logo/LOGO.svg" class="img-fluid logo" alt="" srcset="">
           </div>
+
+          <a class="d-lg-none d-block menu" onclick="openMenu()">
+            <i class="bi bi-list"></i>
+          </a>
         </div>
+        <div id="hover-interactive-header"></div>
         <div id="container-links" class="col-lg-8 col-12 header-main-container">
           <div class="row">
             <div class="col-12 container-links px-0">
@@ -55,7 +60,7 @@
                 <a class="header-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Servicios
                 </a>
-                <ul class="dropdown-menu header-dropdown">
+                <ul id="header-dropdown-list" class="dropdown-menu header-dropdown">
                   <li><a class="dropdown-item" href="#">Servicios Generales</a></li>
                   <li><a class="dropdown-item" href="#">Servicios Especializados</a></li>
                   <li><a class="dropdown-item" href="#">Servicios Construcción</a></li>
@@ -67,6 +72,8 @@
               <a class="header-link" href="javascript:;">Clientes</a>
               <a class="header-link" href="javascript:;">Experiencia</a>
               <a class="header-link" href="javascript:;">Contacto</a>
+
+              <a class="d-lg-none d-block header-close text-white" onclick="closeMenu()"><i class="bi bi-x"></i></a>
             </div>
           </div>
           
@@ -77,8 +84,15 @@
   </div>
 
   <div class="home" style="background-image: url(https://placehold.co/600x400);">
-
   </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>s
   
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

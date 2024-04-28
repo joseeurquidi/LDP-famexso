@@ -126,14 +126,12 @@ a:hover {
   
 }
 
-.logo-container{
-  position: relative;
+.header-scrolled{
+  background: rgba(255, 255, 255, 1) !important;
 }
 
-@media (max-width: 992px) {
-  .logo-container{
-    text-align: center;
-  }
+.logo-container{
+  position: relative;
 }
 
 .container-logo{
@@ -157,7 +155,7 @@ a:hover {
   align-items: center;
   justify-content: end;
   gap: 30px;
-  margin-top: 16px;
+  margin-top: 24px;
   margin-bottom: 24px;
 }
 
@@ -202,13 +200,86 @@ a:hover {
 }
 
 .header-dropdown{
-  background-color: transparent;
+  /* background-color: transparent; */
   border-color: var(--main-color);
 }
 
 .header-dropdown li a{
   color: var(--main-color);
 }
+
+@media (max-width: 992px) {
+  .page-header .header-main-container{
+    background-color: var(--main-color);
+    position: fixed;
+    width: 260px;
+    left: -259px;
+    height: 100%;
+    padding: 23px;
+    padding-top: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transition: all 0.3s;
+  }
+
+  .page-header .container-logo{
+    position: relative;
+    padding: 15px;
+  }
+
+  .page-header .container-logo .logo{
+    height: 60px;
+  }
+
+  .menu{
+    color: black;
+    position: absolute;
+    right: 0px;
+    top: 18px;
+    border-radius: 8px;
+    font-size: 2rem;
+  }
+
+  .page-header .header-main-container .container-links{
+    /* background-color: rgba(25, 25, 25); */
+    flex-flow: column;
+    gap: 12px;
+    align-items: start;
+    justify-content: start;
+    /* transition: all 0.5s; */
+  }
+
+  .page-header .header-main-container.active{
+    left: 0px;
+  }
+
+  .page-header .header-main-container .header-link{
+    color: white;
+  }
+
+}
+
+.page-header .header-close{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 2rem;
+}
+
+#hover-interactive-header{
+  transition: all 0.3s;
+  position: fixed;
+  top: 0px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 25, 25, 0.95);
+}
+
+#hover-interactive-header.active{
+  left: 0px;
+}
+
 
 /* Home */
 .home{
