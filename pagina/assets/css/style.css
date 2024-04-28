@@ -79,6 +79,14 @@ a:hover {
   text-decoration: none;
 }
 
+.uppercase{
+  text-transform: uppercase;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -128,6 +136,7 @@ a:hover {
 
 .header-scrolled{
   background: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
 }
 
 .logo-container{
@@ -321,4 +330,56 @@ a:hover {
 .home .btn-get-started:hover {
   padding-top: 8px;
   background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* about */
+
+.about .icon-box{
+  margin-top: 40px;
+}
+
+.about .icon-box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #d0ecf9;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.about .icon-box:hover .icon {
+  background: var(--sec-color);
+  border-color: var(--sec-color);
+}
+
+.about .icon-box .title {
+  margin-left: 85px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.about .icon-box .icon i {
+  color: var(--sec-color);
+  font-size: 32px;
+}
+
+.about .icon-box:hover .icon i {
+  color: #fff;
+}
+
+.about .icon-box .description {
+  margin-left: 85px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.values-icon{
+  font-size: 40px;
+  color: #67b0d1;
+  margin-bottom: 10px;
 }
