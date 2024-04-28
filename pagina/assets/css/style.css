@@ -1,0 +1,220 @@
+:root{
+  --main-color: #000a5c;
+  --sec-color: #558ed5;
+  --accent-color: #e5322d;
+}
+
+@font-face {
+  font-family: "Humanist";
+  font-weight: 600;
+  src: url(../font/humanist-777-black.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Humanist";
+  font-weight: 400;
+  src: url(../font/humanist-777.otf) format("opentype");
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Humanist", sans-serif;
+}
+
+.font-anton{
+  font-family: "Humanist", sans-serif;
+}
+
+.main-color{
+  color: var(--main-color);
+}
+
+.accent-color{
+  color: var(--accent-color)
+}
+
+.accent-color-important{
+  color: var(--accent-color) !important;
+}
+
+.white-color{
+  color: #fafafa;
+}
+
+
+.white-link{
+  color: white;
+  text-decoration: underline dotted 2px white;
+}
+
+.main-link{
+  color: var(--main-color);
+  text-decoration: underline dotted 2px var(--main-color);
+}
+
+.sec-color{
+  color: var(--sec-background);
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00acef;
+  text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: var(--main-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #6bc1e9;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* HEader */
+
+.page-header{
+  position: fixed;
+  top: 0px;
+  background: transparent;
+  transition: all 0.5s;
+  min-height: 60px;
+  z-index: 10;
+  width: 100%;
+  
+}
+
+.logo-container{
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .logo-container{
+    text-align: center;
+  }
+}
+
+.container-logo{
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background-color: transparent;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  /* box-shadow: 0 3px 10px rgba(0,0,0,.45); */
+}
+
+@media (max-width: 992px) {
+  .container-logo{
+    width: 100%;
+  }
+}
+
+.page-header .container-links{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1400px) {
+  .header-top{
+    padding-right: 70px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .page-header .container-links{
+    gap: 20px;
+  }
+
+  .header-top{
+    padding-right: 50px;
+    gap: 5px;
+  }
+
+  .header-top a:not(:first-child)::before{
+    padding-right: 5px;
+  }
+}
+
+.page-header .header-link{
+  opacity: 0.75;
+  font-size: 15px;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-family: "Humanist", sans-serif;
+}
+
+.page-header .header-link:hover{
+  opacity: 0.9;
+}
+
+.page-header .header-link.active{
+  opacity: 1;
+  position: relative;
+  text-decoration: underline 2px;
+  text-underline-offset: 8px;
+}
+
+.header-dropdown{
+  background-color: transparent;
+  border-color: var(--main-color);
+}
+
+.header-dropdown li a{
+  color: var(--main-color);
+}
+
+/* Home */
+.home{
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
