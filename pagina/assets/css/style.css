@@ -38,8 +38,16 @@ h6 {
   color: var(--main-color);
 }
 
+.black-color{
+  color: black;
+}
+
 .accent-color{
   color: var(--accent-color)
+}
+
+.secundary-color{
+  color: var(--sec-color)
 }
 
 .accent-color-important{
@@ -120,6 +128,16 @@ a:hover {
   bottom: 0;
   left: calc(50% - 25px);
 }
+
+.font22 {
+  font-size: 22px;
+}
+
+.font-weight-bold{
+  font-weight: bold;
+}
+
+
 
 
 /*--------------------------------------------------------------
@@ -444,7 +462,7 @@ a:hover {
   height: 105px;
   transform: rotateZ(330deg); */
 
-  position: absolute;
+  /* position: absolute;
   content: "";
   top: 0;
   left: 0;
@@ -452,7 +470,7 @@ a:hover {
 	height: 0;
 	border-bottom: 60px solid transparent;
   border-left: 480px solid #f4fbfe;
-  border-top: 0px solid transparent;
+  border-top: 0px solid transparent; */
 }
 
 /* .main-image-general-service::after{
@@ -620,3 +638,100 @@ a:hover {
 }
 
 
+/* construction */
+.construction{
+  background-color: #f4fbfe;
+}
+
+.entry-title-black {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, black 50%);
+  background-size: 200%;
+  background-position: 0 0;
+  display: inline;
+  transition: .5s ease-in-out;
+  
+  /* text-transform: uppercase; */
+}
+
+.entry-title-black:hover {
+  background-position: -100% 0;
+}
+
+.entry-title-sec {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--sec-color) 50%);
+  background-size: 200%;
+  background-position: 0 0;
+  display: inline;
+  transition: .5s ease-in-out;
+  
+  /* text-transform: uppercase; */
+}
+.entry-title-sec:hover {
+  background-position: -100% 0;
+}
+
+/* valvulas */
+
+.valve .container-valve{
+  display: flex;
+  justify-content: start;
+  align-items: center; 
+}
+
+.valve .container-valve .container-image{
+  border: 3px solid var(--main-color);
+  padding: 8px;
+}
+
+.valve .container-valve .container-image .image{
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.valve .container-valve .text .title{
+  background-color: var(--main-color);
+  color: #ffffff;
+  border-radius: 0 50px 50px 0;
+  width: fit-content;
+  padding: 6px 24px 6px 6px;
+  padding-left: 15px;
+}
+
+.valve .container-valve .text .desc{
+  padding-left: 15px;
+}
+
+/* conections */
+
+.conections{
+  background-color: #f4fbfe;
+}
+
+.conections .container-coneccion{
+  display: flex;
+  justify-content: start;
+  align-items: center; 
+}
+
+.conections .container-coneccion .image{
+  border: 3px solid var(--main-color);
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.conections .container-coneccion .text .title{
+  background-color: var(--main-color);
+  color: #ffffff;
+  border-radius: 0 50px 50px 0;
+  width: fit-content;
+  padding: 6px 24px 6px 6px;
+  padding-left: 15px;
+}
