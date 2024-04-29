@@ -699,6 +699,11 @@ a:hover {
   width: fit-content;
   padding: 6px 24px 6px 6px;
   padding-left: 15px;
+  transition: all 0.3s;
+}
+
+.valve .container-valve .text .title:hover{
+  padding-right: 34px;
 }
 
 .valve .container-valve .text .desc{
@@ -731,7 +736,278 @@ a:hover {
   background-color: var(--main-color);
   color: #ffffff;
   border-radius: 0 50px 50px 0;
-  width: fit-content;
+  width: 100%;
   padding: 6px 24px 6px 6px;
   padding-left: 15px;
+  transition: all 0.3s;
+}
+
+.conections .container-coneccion .text .title:hover{
+  width: calc(100% + 10px);
+}
+
+/* clients */
+.clients .client-logo {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  background: #fff;
+  height: 120px;
+}
+
+.clients .client-logo img {
+  height: 75%;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.clients .client-logo:hover img {
+  filter: none;
+  transform: scale(1.2);
+}
+
+/* experiencia */
+.experience{
+  background-color: #f4fbfe;
+}
+
+.experience .container-experience{
+  border: 4px solid transparent;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.experience .container-experience.one{
+  background-color: var(--main-color);
+  border-top-color: var(--main-color);
+  border-bottom-color: var(--main-color);
+  color: white;
+}
+
+.experience .container-experience.two{
+  border-color: var(--main-color);
+}
+
+.experience .container-experience .image{
+  width: 100%;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.experience .container-experience .info{
+  border: 3px solid var(--main-color);
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+  min-height: 180px;
+}
+
+/* contacto */
+/* .contact .info-container {
+  background-color: var(--main-color);
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact .info-item {
+  width: 100%;
+  background-color: var(--sec-color);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.contact .info-item i {
+  font-size: 20px;
+  color: #fff;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.contact .info-item:hover i {
+  background: #fff;
+  color: var(--main-color);
+}
+.contact .info-item h4 {
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+} */
+
+.contact .info-container {
+  background-color: var(--main-color);
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact .info-item {
+  width: 100%;
+  background-color: var(--sec-color);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.contact .info-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact .info-item i {
+  font-size: 20px;
+  color: #fff;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.contact .info-item h4 {
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.contact .info-item:hover i {
+  background: #fff;
+  color: var(--main-color);
+}
+
+.contact .php-email-form {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 0 10px 10px 0;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #df1529;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: var(--sec-color);
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--sec-color);
+  border-top-color: #fff;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--main-color);
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: var(--main-color);
+  border: 0;
+  padding: 14px 45px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: var(--main-color);
+  opacity: 0.8;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
